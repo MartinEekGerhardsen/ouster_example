@@ -23,8 +23,7 @@ find_package(
              tf2_ros)
 
 # ==== Options ====
-set(CMAKE_CXX_STANDARD 14)
-add_compile_options(-Wall -Wextra -Werror)
+add_compile_options(-std=c++14 -Wall -Wextra -Werror)
 option(CMAKE_POSITION_INDEPENDENT_CODE "Build position independent code." ON)
 
 # ==== Catkin ====

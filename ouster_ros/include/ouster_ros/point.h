@@ -4,8 +4,20 @@
  */
 
 #pragma once
+
 #define PCL_NO_PRECOMPILE
+
 #include <pcl/point_types.h>
+#include <pcl/impl/point_types.hpp>
+#include <pcl/filters/conditional_removal.h>
+#include <pcl/filters/extract_indices.h>
+#include <pcl/filters/impl/extract_indices.hpp>
+#include <pcl/filters/impl/conditional_removal.hpp>
+#include <pcl/pcl_base.h>
+#include <pcl/impl/pcl_base.hpp>
+#include <pcl/PointIndices.h>
+#include <pcl/cloud_iterator.h>
+#include <pcl/impl/cloud_iterator.hpp>
 
 #include <Eigen/Dense>
 #include <chrono>

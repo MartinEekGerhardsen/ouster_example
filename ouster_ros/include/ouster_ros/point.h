@@ -11,6 +11,8 @@
 #include <pcl/impl/point_types.hpp>
 #include <pcl/filters/conditional_removal.h>
 #include <pcl/filters/extract_indices.h>
+#include <pcl/filters/voxel_grid.h>
+#include <pcl/filters/impl/voxel_grid.hpp>
 #include <pcl/filters/impl/extract_indices.hpp>
 #include <pcl/filters/impl/conditional_removal.hpp>
 #include <pcl/pcl_base.h>
@@ -18,6 +20,14 @@
 #include <pcl/PointIndices.h>
 #include <pcl/cloud_iterator.h>
 #include <pcl/impl/cloud_iterator.hpp>
+
+
+#include <pcl/sample_consensus/ransac.h>
+
+#include <pcl/sample_consensus/sac_model_plane.h>
+
+#include <pcl/sample_consensus/impl/sac_model_plane.hpp>
+#include <pcl/sample_consensus/impl/ransac.hpp>
 
 #include <Eigen/Dense>
 #include <chrono>

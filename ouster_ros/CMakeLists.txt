@@ -58,7 +58,7 @@ add_subdirectory(../ouster_client ouster_client EXCLUDE_FROM_ALL)
 set(BUILD_SHARED_LIBS ${_SAVE_BUILD_SHARED_LIBS})
 
 # catkin adds all include dirs to a single variable, don't try to use targets
-include_directories(${_ouster_ros_INCLUDE_DIRS} ${catkin_INCLUDE_DIRS})
+include_directories(${_ouster_ros_INCLUDE_DIRS} ${catkin_INCLUDE_DIRS} ${Eigen_INCLUDE_DIRS})
 
 # use only MPL-licensed parts of eigen
 add_definitions(-DEIGEN_MPL2_ONLY)
